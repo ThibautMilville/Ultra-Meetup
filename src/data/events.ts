@@ -9,29 +9,26 @@ export const events: Event[] = [
 
 The night will feature insightful speeches, a live DJ, premium cocktails, a curated food selection, and a 2-hour cruise along the Seine, providing the perfect setting for meaningful discussions and collaborations.
 
-📍 Event Schedule
+📅 Date & Time: Saturday, February 13, 2025, at 7:00 PM
+📍 Location: 4 Quai Saint-Bernard, 75005 Paris, France
+🍽️ Experience:
+- Welcome drinks and networking
+- Speeches and panel discussions
+- Exclusive Seine River Cruise (Networking, DJ, cocktails, and food)
+- Afterparty on the boat
 
-19:00 - 20:00 → Guest check-in, networking, and welcome drinks
+🎤 Speakers:
+Stephan Français: CEO of Metaviso Thomson Computing, a French company specializing in affordable personal computers.
 
-20:00 - 21:00 → Speeches and panel discussions
+Gus van Rijckevorsel: seasoned entrepreneur and transformational leader, currently serving as the CEO of Ultra, a pioneering company in the Web3 gaming space. With a track record of building and scaling businesses, Gus is redefining Ultra's trajectory with bold strategies and a pragmatic, results-driven approach.
 
-Stephan Français is the CEO of Metaviso Thomson Computing, a French company specializing in affordable personal computers.
+Alexander Rees-Evans: GTM advisor for Code Craft, Techstars mentor, author of "How to launch a token", President of the Blockchain commission of the World Business Union.
 
-Gus van Rijckevorsel is a seasoned entrepreneur and transformational leader, currently serving as the CEO of Ultra, a pioneering company in the Web3 gaming space. With a track record of building and scaling businesses, Gus is redefining Ultra's trajectory with bold strategies and a pragmatic, results-driven approach.
-
-Alexander Rees-Evans GTM advisor for Code Craft, Techstars mentor, author of "How to launch a token", President of the Blockchain commission of the World Business Union.
-
-Sofiane Delloue CEO of NewCoin is a polymath, system thinker and entrepreneur working at the intersection of AI and crypto for the past six years and member of the MIT consortium on decentralized AI standards.
-
-21:00 - 23:00 → Exclusive Seine River Cruise (Networking, DJ, cocktails, and food)
+Sofiane Delloue: CEO of NewCoin, he is a polymath, system thinker and entrepreneur working at the intersection of AI and crypto for the past six years and member of the MIT consortium on decentralized AI standards.
 
 ⚠️ Important: Once the boat departs, no entry or exit will be possible until we return at 23:00. Please ensure you arrive on time.
 
-23:00 - 01:00 → Afterparty on the boat
-
 This event is invite-only. Secure your spot by registering via Lu.ma. Access will be granted via QR code check-in and a VIP guest list. The exact location will be shared after confirmation.
-
-Looking forward to seeing you there.
 
 Please note, there will be filming and photography on-site at the event and by attending you consent to appearing in the images and recordings captured.`,
     date: "2025-02-13T19:00:00",
@@ -89,7 +86,7 @@ Will you be joining us? Let us know and get ready for an amazing night!`,
     },
     schedule: [
       {
-        time: "19:00 - 20:00",
+        time: "19:00 - 21:30",
         activity: "Apero among Ultra community members",
       },
     ],
