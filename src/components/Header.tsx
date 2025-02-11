@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
       <div className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <img src="../../assets/favicon.ico" alt="Ultra" className="h-8 w-auto mr-2" />
+            <img src="../../assets/logo.png" alt="Ultra" className="h-8 w-auto mr-2" />
             <span className="text-2xl font-bold bg-gradient-to-r from-[#7000ff] to-[#8929ff] bg-clip-text text-transparent">Ultra&nbsp;</span>
             <span className="text-2xl font-bold text-white bg-clip-text text-transparent">Meetup</span>
           </Link>
