@@ -6,10 +6,22 @@
   body {
     @apply antialiased text-gray-900;
   }
+
+  img {
+    -webkit-backface-visibility: hidden;
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
 }
 
 @layer components {
   .container {
     @apply max-w-7xl mx-auto;
   }
+}
+
+.image-rendering-crisp {
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
 }

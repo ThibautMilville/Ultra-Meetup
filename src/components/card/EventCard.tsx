@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Calendar, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Event } from "../types";
+import { Event } from "../../types";
 
 interface EventCardProps {
   event: Event;
@@ -35,7 +35,11 @@ export const EventCard: React.FC<EventCardProps> = ({ event, index }) => {
           <img
             src={event.imageUrl}
             alt={event.title}
-            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300 image-rendering-crisp"
+            style={{
+              imageRendering: "-webkit-optimize-contrast",
+              backfaceVisibility: "hidden",
+            }}
           />
           {event.isPast && (
             <div className="absolute top-4 right-4 bg-black/80 text-white px-6 py-2 rounded-full z-20 backdrop-blur-sm">

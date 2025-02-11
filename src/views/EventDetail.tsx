@@ -1,34 +1,34 @@
-import React from 'react';
-import { useParams, Navigate, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Calendar, MapPin, ArrowLeft, Clock, ExternalLink } from 'lucide-react';
-import { events } from '../data/events';
-import { Breadcrumbs } from '../components/Breadcrumbs';
+import React from "react";
+import { useParams, Navigate, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Calendar, MapPin, ArrowLeft, Clock, ExternalLink } from "lucide-react";
+import { events } from "../data/events";
+import { Breadcrumbs } from "../components/Breadcrumbs";
 
 export const EventDetail: React.FC = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const event = events.find(e => e.id === id);
+  const event = events.find((e) => e.id === id);
 
   if (!event) {
     return <Navigate to="/" replace />;
   }
 
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
-      weekday: 'long',
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
+    return new Date(dateString).toLocaleDateString("en-US", {
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+      hour: "numeric",
+      minute: "numeric",
     });
   };
 
   return (
     <div className="min-h-screen bg-gray-50">
       <Breadcrumbs eventTitle={event.title} />
-      
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -53,6 +53,10 @@ export const EventDetail: React.FC = () => {
               src={event.imageUrl}
               alt={event.title}
               className="w-full h-full object-cover"
+              style={{
+                imageRendering: "-webkit-optimize-contrast",
+                backfaceVisibility: "hidden",
+              }}
             />
             {event.isPast && (
               <div className="absolute top-4 right-4 bg-black/80 text-white px-6 py-2 rounded-full z-20 backdrop-blur-sm font-medium tracking-wide">
@@ -68,8 +72,10 @@ export const EventDetail: React.FC = () => {
             className="bg-white rounded-b-xl shadow-lg p-8 space-y-10"
           >
             <div className="space-y-6">
-              <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">{event.title}</h1>
-              
+              <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">
+                {event.title}
+              </h1>
+
               <div className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
                 <div className="flex items-center text-gray-700">
                   <Calendar className="w-5 h-5 mr-3 text-[#7000ff]" />
@@ -92,16 +98,25 @@ export const EventDetail: React.FC = () => {
 
             {event.schedule && (
               <div className="space-y-6">
-                <h2 className="text-2xl font-bold text-gray-900 tracking-tight">Event Schedule</h2>
+                <h2 className="text-2xl font-bold text-gray-900 tracking-tight">
+                  Event Schedule
+                </h2>
                 <div className="space-y-4">
                   {event.schedule.map((item, index) => (
-                    <div key={index} className="flex items-start space-x-4 p-5 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                    <div
+                      key={index}
+                      className="flex items-start space-x-4 p-5 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+                    >
                       <div className="flex-shrink-0">
                         <Clock className="w-5 h-5 text-[#7000ff]" />
                       </div>
                       <div>
-                        <div className="font-bold text-gray-900 tracking-tight text-lg mb-1">{item.time}</div>
-                        <div className="text-gray-700 whitespace-pre-line leading-relaxed">{item.activity}</div>
+                        <div className="font-bold text-gray-900 tracking-tight text-lg mb-1">
+                          {item.time}
+                        </div>
+                        <div className="text-gray-700 whitespace-pre-line leading-relaxed">
+                          {item.activity}
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -110,13 +125,19 @@ export const EventDetail: React.FC = () => {
             )}
 
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-gray-900 tracking-tight">About the Organizer</h2>
+              <h2 className="text-2xl font-bold text-gray-900 tracking-tight">
+                About the Organizer
+              </h2>
               <div className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors duration-200">
                 <h3 className="text-xl font-bold text-gray-900 tracking-tight mb-2">
                   {event.organizer.name}
                 </h3>
-                <p className="text-[#7000ff] font-semibold mb-4 tracking-wide">{event.organizer.role}</p>
-                <p className="text-gray-700 leading-relaxed">{event.organizer.description}</p>
+                <p className="text-[#7000ff] font-semibold mb-4 tracking-wide">
+                  {event.organizer.role}
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  {event.organizer.description}
+                </p>
               </div>
             </div>
 
