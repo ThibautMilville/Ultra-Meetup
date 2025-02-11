@@ -1,139 +1,110 @@
-import { Event } from '../types';
+import { Event } from "../types";
 
 export const events: Event[] = [
   {
-    id: '1',
-    title: 'Ultra Gaming Revolution',
-    description: 'Join us for an exciting evening discussing the future of gaming with Ultra.io. We\'ll explore blockchain gaming, digital ownership, and the revolutionary Ultra platform.',
-    date: '2024-04-15T18:00:00',
-    location: 'Tech Hub Paris, 75001 Paris',
-    imageUrl: 'https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&q=80',
-    isPast: false
+    id: "1",
+    title: "Ultra Gaming Revolution",
+    description: "Join us for an exciting evening discussing the future of gaming with Ultra.io. We'll explore blockchain gaming, digital ownership, and the revolutionary Ultra platform.",
+    longDescription: `Join us for an exclusive evening on a private boat during NFT Paris, co-hosted by Metavisio and Ultra. This event will bring together industry leaders, investors, and Web3 enthusiasts for a high-level networking experience.
+
+The night will feature insightful speeches, a live DJ, premium cocktails, a curated food selection, and a 2-hour cruise along the Seine, providing the perfect setting for meaningful discussions and collaborations.
+
+📍 Event Schedule
+
+19:00 - 20:00 → Guest check-in, networking, and welcome drinks
+
+20:00 - 21:00 → Speeches and panel discussions
+
+Stephan Français is the CEO of Metaviso Thomson Computing, a French company specializing in affordable personal computers.
+
+Gus van Rijckevorsel is a seasoned entrepreneur and transformational leader, currently serving as the CEO of Ultra, a pioneering company in the Web3 gaming space. With a track record of building and scaling businesses, Gus is redefining Ultra's trajectory with bold strategies and a pragmatic, results-driven approach.
+
+Alexander Rees-Evans GTM advisor for Code Craft, Techstars mentor, author of "How to launch a token", President of the Blockchain commission of the World Business Union.
+
+Sofiane Delloue CEO of NewCoin is a polymath, system thinker and entrepreneur working at the intersection of AI and crypto for the past six years and member of the MIT consortium on decentralized AI standards.
+
+21:00 - 23:00 → Exclusive Seine River Cruise (Networking, DJ, cocktails, and food)
+
+⚠️ Important: Once the boat departs, no entry or exit will be possible until we return at 23:00. Please ensure you arrive on time.
+
+23:00 - 01:00 → Afterparty on the boat
+
+This event is invite-only. Secure your spot by registering via Lu.ma. Access will be granted via QR code check-in and a VIP guest list. The exact location will be shared after confirmation.
+
+Looking forward to seeing you there.
+
+Please note, there will be filming and photography on-site at the event and by attending you consent to appearing in the images and recordings captured.`,
+    date: "2024-04-15T18:00:00",
+    location: "Tech Hub Paris, 75001 Paris",
+    imageUrl: "https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&q=80",
+    isPast: false,
+    organizer: {
+      name: "Ultra Times",
+      role: "Community organization",
+      description: "Ultra Times is a fan organization around the Ultra.io project and a media dedicated to Web3 gaming. Our goal is to help Ultra achieve its vision and become inevitable in the gaming world.",
+    },
+    schedule: [
+      {
+        time: "19:00 - 20:00",
+        activity: "Guest check-in, networking, and welcome drinks",
+      },
+      {
+        time: "20:00 - 21:00",
+        activity: "Speeches and panel discussions",
+      },
+      {
+        time: "21:00 - 23:00",
+        activity: "Exclusive Seine River Cruise (Networking, DJ, cocktails, and food)",
+      },
+      {
+        time: "23:00 - 01:00",
+        activity: "Afterparty on the boat",
+      },
+    ],
+    registrationLink: "https://lu.ma/ultra-gaming-revolution",
   },
   {
-    id: '2',
-    title: 'NFT Gaming Workshop',
-    description: 'Learn how to create, trade, and integrate NFTs in gaming using Ultra\'s platform. Hands-on workshop with industry experts.',
-    date: '2024-05-20T14:00:00',
-    location: 'Digital Campus London, EC2A 4BX',
-    imageUrl: 'https://images.unsplash.com/photo-1616455579100-2ceaa4eb2d37?auto=format&fit=crop&q=80',
-    isPast: false
+    id: "2",
+    title: "Ulta Meetup - First edition",
+    description: "Join us for an exciting evening discussing the future of gaming with Ultra.io. We'll explore blockchain gaming, digital ownership, and the revolutionary Ultra platform.",
+    longDescription: `Join us for an exclusive gathering hosted by Ultra Times at Le 17-45, an elegant venue in the heart of Paris.
+
+📅 Date & Time: Friday, February 14, 2025, at 7:00 PM
+📍 Location: Le 17-45, 49 rue Jean-Baptiste Pigalle, 75009 Paris
+🍽️ Experience: Enjoy a delightful selection of aperitif platters in a warm and friendly atmosphere.
+
+This is a unique opportunity to meet fellow community members, engage in great conversations, and share unforgettable moments.
+
+💬 Need more info? Connect with us on our Ultra Times Discord: https://discord.gg/UsZVKXjB
+
+Will you be joining us? Let us know and get ready for an amazing night!`,
+    date: "2025-02-14T19:00:00",
+    location: "Tech Hub Paris, 75001 Paris",
+    imageUrl: "https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&q=80",
+    isPast: false,
+    organizer: {
+      name: "Ultra Times",
+      role: "Community organization",
+      description: "Ultra Times is a fan organization around the Ultra.io project and a media dedicated to Web3 gaming. Our goal is to help Ultra achieve its vision and become inevitable in the gaming world.",
+    },
+    schedule: [
+      {
+        time: "19:00 - 20:00",
+        activity: "Guest check-in, networking, and welcome drinks",
+      },
+      {
+        time: "20:00 - 21:00",
+        activity: "Speeches and panel discussions",
+      },
+      {
+        time: "21:00 - 23:00",
+        activity: "Exclusive Seine River Cruise (Networking, DJ, cocktails, and food)",
+      },
+      {
+        time: "23:00 - 01:00",
+        activity: "Afterparty on the boat",
+      },
+    ],
+    registrationLink: "https://lu.ma/ultra-gaming-revolution",
   },
-  {
-    id: '3',
-    title: 'Ultra Developer Conference',
-    description: 'A deep dive into Ultra\'s development tools and SDK. Building the future of gaming together.',
-    date: '2024-02-10T09:00:00',
-    location: 'Berlin Tech Center, 10115 Berlin',
-    imageUrl: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80',
-    isPast: true
-  },
-  {
-    id: '4',
-    title: 'Gaming Metaverse Summit',
-    description: 'Explore the intersection of gaming and metaverse technologies with Ultra\'s innovative platform.',
-    date: '2024-06-15T10:00:00',
-    location: 'Virtual Reality Center, Amsterdam',
-    imageUrl: 'https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&q=80',
-    isPast: false
-  },
-  {
-    id: '5',
-    title: 'Blockchain Gaming Hackathon',
-    description: 'Join fellow developers for a 48-hour hackathon building the next generation of blockchain games.',
-    date: '2024-07-01T09:00:00',
-    location: 'Innovation Hub, Singapore',
-    imageUrl: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80',
-    isPast: false
-  },
-  {
-    id: '6',
-    title: 'Ultra Platform Launch Event',
-    description: 'Past event: Celebrating the launch of Ultra\'s revolutionary gaming platform.',
-    date: '2023-12-05T18:30:00',
-    location: 'Grand Palais, Paris',
-    imageUrl: 'https://images.unsplash.com/photo-1492044715545-15ddedd84e5e?auto=format&fit=crop&q=80',
-    isPast: true
-  },
-  {
-    id: '7',
-    title: 'Game Developers Meetup',
-    description: 'Past event: Monthly gathering of game developers exploring Ultra\'s development tools.',
-    date: '2024-01-20T19:00:00',
-    location: 'Coworking Space, San Francisco',
-    imageUrl: 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&q=80',
-    isPast: true
-  },
-  {
-    id: '8',
-    title: 'Ultra Gaming Festival',
-    description: 'A celebration of gaming culture with tournaments, workshops, and exclusive Ultra announcements.',
-    date: '2024-08-10T11:00:00',
-    location: 'Gaming Arena, Tokyo',
-    imageUrl: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80',
-    isPast: false
-  },
-  {
-    id: '9',
-    title: 'NFT Art & Gaming Exhibition',
-    description: 'Past event: Showcasing the intersection of digital art and gaming on the Ultra platform.',
-    date: '2023-11-15T10:00:00',
-    location: 'Modern Art Museum, New York',
-    imageUrl: 'https://images.unsplash.com/photo-1561547256-0e5924b88ce9?auto=format&fit=crop&q=80',
-    isPast: true
-  },
-  {
-    id: '10',
-    title: 'Ultra Community Summit',
-    description: 'Connect with the Ultra community and shape the future of blockchain gaming.',
-    date: '2024-09-05T14:00:00',
-    location: 'Convention Center, Seoul',
-    imageUrl: 'https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&q=80',
-    isPast: false
-  },
-  {
-    id: '11',
-    title: 'Blockchain Gaming Awards',
-    description: 'Past event: Annual ceremony celebrating innovation in blockchain gaming.',
-    date: '2023-12-20T19:00:00',
-    location: 'Luxury Hotel, Dubai',
-    imageUrl: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80',
-    isPast: true
-  },
-  {
-    id: '12',
-    title: 'Ultra Game Jam',
-    description: 'A weekend of intense game development using Ultra\'s latest tools and features.',
-    date: '2024-10-15T09:00:00',
-    location: 'Tech Campus, Toronto',
-    imageUrl: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80',
-    isPast: false
-  },
-  {
-    id: '13',
-    title: 'Gaming Economics Forum',
-    description: 'Past event: Discussion on the future of gaming economies and digital assets.',
-    date: '2024-01-05T11:00:00',
-    location: 'Financial District, Hong Kong',
-    imageUrl: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80',
-    isPast: true
-  },
-  {
-    id: '14',
-    title: 'Ultra Developer Workshop',
-    description: 'Intensive training session on building games with Ultra\'s blockchain technology.',
-    date: '2024-11-10T10:00:00',
-    location: 'Innovation Center, Stockholm',
-    imageUrl: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&q=80',
-    isPast: false
-  },
-  {
-    id: '15',
-    title: 'Metaverse Music Festival',
-    description: 'Experience the future of digital entertainment with Ultra\'s metaverse technology.',
-    date: '2024-12-01T16:00:00',
-    location: 'Virtual World, Worldwide',
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80',
-    isPast: false
-  }
 ];

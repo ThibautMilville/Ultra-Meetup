@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { EventCard } from '../components/EventCard';
+import { EventCard } from '../components/card/EventCard';
 import { events } from '../data/events';
 
-export const Events: React.FC = () => {
+export const Home: React.FC = () => {
   const [displayCount, setDisplayCount] = useState(10);
   const sortedEvents = [...events].sort((a, b) => 
     new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -31,11 +31,12 @@ export const Events: React.FC = () => {
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="bg-gradient-to-r from-[#7000ff] to-[#8929ff] bg-clip-text text-transparent">
-              All Events
+              Ultra
             </span>
+            <span className="text-gray-900"> Events</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover all our community gatherings - past and upcoming
+            Join the Ultra.io community at our events and be part of the gaming revolution
           </p>
         </motion.div>
 
