@@ -3,9 +3,9 @@ import { Event } from "../types";
 export const events: Event[] = [
   {
     id: "1",
-    title: "Ultra Gaming Revolution",
-    description: "Join us for an exciting evening discussing the future of gaming with Ultra.io. We'll explore blockchain gaming, digital ownership, and the revolutionary Ultra platform.",
-    longDescription: `Join us for an exclusive evening on a private boat during NFT Paris, co-hosted by Metavisio and Ultra. This event will bring together industry leaders, investors, and Web3 enthusiasts for a high-level networking experience.
+    title: "Metaviso X Ultra - Exclusive NFT Paris Event",
+    description: "Attend an insightful evening featuring expert speeches from Ultra and Metavision - Thomson Computing. Discover the future of gaming through discussions on blockchain technology, digital ownership, and the innovations shaping the industry.",
+    longDescription: `Join the community for an exclusive evening on a private boat during NFT Paris, co-hosted by Metavisio and Ultra. This event will bring together industry leaders, investors, and Web3 enthusiasts for a high-level networking experience.
 
 The night will feature insightful speeches, a live DJ, premium cocktails, a curated food selection, and a 2-hour cruise along the Seine, providing the perfect setting for meaningful discussions and collaborations.
 
@@ -34,14 +34,14 @@ This event is invite-only. Secure your spot by registering via Lu.ma. Access wil
 Looking forward to seeing you there.
 
 Please note, there will be filming and photography on-site at the event and by attending you consent to appearing in the images and recordings captured.`,
-    date: "2024-04-15T18:00:00",
-    location: "Tech Hub Paris, 75001 Paris",
-    imageUrl: "https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&q=80",
+    date: "2025-02-13T19:00:00",
+    location: "4 Quai Saint-Bernard, 75005 Paris, France",
+    imageUrl: "../../public/pictures/boat-party.jpg",
     isPast: false,
     organizer: {
-      name: "Ultra Times",
-      role: "Community organization",
-      description: "Ultra Times is a fan organization around the Ultra.io project and a media dedicated to Web3 gaming. Our goal is to help Ultra achieve its vision and become inevitable in the gaming world.",
+      name: "Ultra",
+      role: "Gaming platform",
+      description: "Ultra is a blockchain-based gaming platform that allows players to buy, sell, and own in-game assets. The platform is designed to be a one-stop shop for all things gaming, including games, tournaments, and virtual goods.",
     },
     schedule: [
       {
@@ -65,8 +65,8 @@ Please note, there will be filming and photography on-site at the event and by a
   },
   {
     id: "2",
-    title: "Ulta Meetup - First edition",
-    description: "Join us for an exciting evening discussing the future of gaming with Ultra.io. We'll explore blockchain gaming, digital ownership, and the revolutionary Ultra platform.",
+    title: "Ultra Meetup - NFT Paris 2025",
+    description: "Come hang out with us for a laid-back evening chatting about the future of gaming with Ultra.io! We’ll dive into blockchain gaming, digital ownership, and how Ultra is shaking things up—all over some good drinks and great company.",
     longDescription: `Join us for an exclusive gathering hosted by Ultra Times at Le 17-45, an elegant venue in the heart of Paris.
 
 📅 Date & Time: Friday, February 14, 2025, at 7:00 PM
@@ -79,8 +79,8 @@ This is a unique opportunity to meet fellow community members, engage in great c
 
 Will you be joining us? Let us know and get ready for an amazing night!`,
     date: "2025-02-14T19:00:00",
-    location: "Tech Hub Paris, 75001 Paris",
-    imageUrl: "https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&q=80",
+    location: "Le 17-45, 49 rue Jean-Baptiste Pigalle, 75009 Paris",
+    imageUrl: "../../public/pictures/apero.jpg",
     isPast: false,
     organizer: {
       name: "Ultra Times",
@@ -90,21 +90,9 @@ Will you be joining us? Let us know and get ready for an amazing night!`,
     schedule: [
       {
         time: "19:00 - 20:00",
-        activity: "Guest check-in, networking, and welcome drinks",
-      },
-      {
-        time: "20:00 - 21:00",
-        activity: "Speeches and panel discussions",
-      },
-      {
-        time: "21:00 - 23:00",
-        activity: "Exclusive Seine River Cruise (Networking, DJ, cocktails, and food)",
-      },
-      {
-        time: "23:00 - 01:00",
-        activity: "Afterparty on the boat",
+        activity: "Apero among Ultra community members",
       },
     ],
-    registrationLink: "https://lu.ma/ultra-gaming-revolution",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSc7Y4pnI_c6wEg8pDHChuP7VynFmoQy2eqwJ6FH8q_p1KMskw/viewform?usp=header",
   },
 ];
