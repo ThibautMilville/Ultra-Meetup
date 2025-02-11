@@ -58,7 +58,7 @@ Please note, there will be filming and photography on-site at the event and by a
         activity: "Afterparty on the boat",
       },
     ],
-    registrationLink: "https://lu.ma/ultra-gaming-revolution",
+    registrationLink: "https://lu.ma/a6fgviaz?tk=uYskGV",
   },
   {
     id: "2",
