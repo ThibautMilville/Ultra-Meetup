@@ -33,7 +33,7 @@ This event is invite-only. Secure your spot by registering via Lu.ma. Access wil
 Please note, there will be filming and photography on-site at the event and by attending you consent to appearing in the images and recordings captured.`,
     date: "2025-02-13T19:00:00",
     location: "4 Quai Saint-Bernard, 75005 Paris, France",
-    imageUrl: "../../public/pictures/boat-party.jpg",
+    imageUrl: "/pictures/boat-party.jpg",
     isPast: false,
     organizer: {
       name: "Ultra",
@@ -77,7 +77,7 @@ This is a unique opportunity to meet fellow community members, engage in great c
 Will you be joining us? Let us know and get ready for an amazing night!`,
     date: "2025-02-14T19:00:00",
     location: "Le 17-45, 49 rue Jean-Baptiste Pigalle, 75009 Paris",
-    imageUrl: "../../public/pictures/apero.jpg",
+    imageUrl: "/pictures/apero.jpg",
     isPast: false,
     organizer: {
       name: "Ultra Times",
